@@ -1,0 +1,483 @@
+2025-06-12 23:12:45,261 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-12 23:12:45,530 [bot] INFO: Бот успешно создан.
+2025-06-12 23:12:45,530 [bot] INFO: Роутеры подключены.
+2025-06-12 23:12:45,530 [bot] INFO: Запуск polling...
+2025-06-12 23:12:46,516 [bot.handlers] INFO: Получена команда /start от пользователя 919970381
+2025-06-12 23:13:06,237 [bot.handlers] INFO: Получена команда /start от пользователя 919970381
+2025-06-12 23:13:31,260 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-12 23:13:31,894 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-12 23:13:34,157 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-12 23:15:08,998 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-12 23:15:10,250 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-12 23:15:12,307 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-12 23:15:27,140 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-12 23:15:27,903 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-12 23:15:29,939 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-12 23:19:45,374 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-12 23:19:46,090 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-12 23:21:44,722 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-12 23:21:44,959 [bot] INFO: Бот успешно создан.
+2025-06-12 23:21:44,959 [bot] INFO: Роутеры подключены.
+2025-06-12 23:21:44,959 [bot] INFO: Запуск polling...
+2025-06-12 23:22:23,974 [bot.handlers] INFO: Получена команда /start от пользователя 919970381
+2025-06-12 23:22:34,172 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-12 23:22:35,005 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-12 23:23:50,271 [bot.handlers] ERROR: Ошибка при обращении к API: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 466, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1419, in getresponse
+    response.begin()
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 466, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1419, in getresponse
+    response.begin()
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\telegram_bot\handlers.py", line 40, in handle_photo
+    response = requests.post(API_URL, files=files)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+2025-06-12 23:24:14,160 [bot] INFO: Завершение работы бота.
+2025-06-12 23:44:14,273 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-12 23:44:14,533 [bot] INFO: Бот успешно создан.
+2025-06-12 23:44:14,534 [bot] INFO: Роутеры подключены.
+2025-06-12 23:44:14,534 [bot] INFO: Запуск polling...
+2025-06-12 23:44:34,628 [bot.handlers] INFO: Получена команда /start от пользователя 919970381
+2025-06-12 23:44:54,535 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-12 23:44:55,237 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-12 23:44:59,299 [bot.handlers] ERROR: Ошибка при обращении к API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /predict (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000246F5A489B0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1322, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1081, in _send_output
+    self.send(msg)
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1025, in send
+    self.connect()
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000246F5A489B0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /predict (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000246F5A489B0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\telegram_bot\handlers.py", line 40, in handle_photo
+    response = requests.post(API_URL, files=files)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /predict (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000246F5A489B0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2025-06-12 23:44:59,483 [bot.handlers] ERROR: Ошибка при получении фото от Telegram: Telegram server says - Bad Request: can't parse entities: Unsupported start tag "urllib3.connection.httpconnection" at byte offset 144
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 400, in request
+    self.endheaders()
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1322, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1081, in _send_output
+    self.send(msg)
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1025, in send
+    self.connect()
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 238, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x00000246F5A489B0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /predict (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000246F5A489B0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\telegram_bot\handlers.py", line 40, in handle_photo
+    response = requests.post(API_URL, files=files)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /predict (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000246F5A489B0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\telegram_bot\handlers.py", line 55, in handle_photo
+    await message.answer(f"Ошибка API:\n<code>{e}</code>")
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 478, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unsupported start tag "urllib3.connection.httpconnection" at byte offset 144
+2025-06-13 00:00:55,923 [bot] INFO: Завершение работы бота.
+2025-06-13 00:05:01,991 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-13 00:05:02,225 [bot] INFO: Бот успешно создан.
+2025-06-13 00:05:02,241 [bot] INFO: Роутеры подключены.
+2025-06-13 00:05:02,241 [bot] INFO: Запуск polling...
+2025-06-13 00:05:04,866 [bot] ERROR: Ошибка при запуске бота: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Удаленный компьютер отклонил это сетевое подключение]
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1115, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\impl.py", line 122, in start_connection
+    raise first_exception
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\impl.py", line 73, in start_connection
+    sock = await _connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\impl.py", line 208, in _connect_sock
+    await loop.sock_connect(sock, address)
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] Удаленный компьютер отклонил это сетевое подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    async with session.post(
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1406, in _create_direct_connection
+    raise last_exc
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1375, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1130, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Удаленный компьютер отклонил это сетевое подключение]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\telegram_bot\bot.py", line 38, in main
+    await dp.start_polling(bot)
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 591, in start_polling
+    await asyncio.gather(*done)
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 362, in _polling
+    user: User = await bot.me()
+                 ^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 350, in me
+    self._me = await self.get_me()
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 1776, in get_me
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\bot.py", line 478, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\client\session\aiohttp.py", line 184, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}")
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Удаленный компьютер отклонил это сетевое подключение]
+2025-06-13 00:05:04,899 [bot] INFO: Завершение работы бота.
+2025-06-13 00:07:48,032 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-13 00:07:48,285 [bot] INFO: Бот успешно создан.
+2025-06-13 00:07:48,285 [bot] INFO: Роутеры подключены.
+2025-06-13 00:07:48,285 [bot] INFO: Запуск polling...
+2025-06-13 00:07:48,739 [bot.handlers] INFO: Получена команда /start от пользователя 919970381
+2025-06-13 00:08:01,717 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-13 00:08:02,512 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-13 00:08:04,703 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: малина / raspberry
+2025-06-13 11:16:23,433 [bot] INFO: Завершение работы бота.
+2025-06-18 00:03:10,158 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-18 00:03:10,444 [bot] INFO: Бот успешно создан.
+2025-06-18 00:03:10,444 [bot] INFO: Роутеры подключены.
+2025-06-18 00:03:10,444 [bot] INFO: Запуск polling...
+2025-06-18 00:03:43,248 [bot.handlers] INFO: Получена команда /start от пользователя 919970381
+2025-06-18 00:03:59,341 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 00:03:59,850 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 00:04:02,101 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 00:07:35,923 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 00:07:36,447 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 00:07:38,537 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 00:10:13,994 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 00:10:14,452 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 00:10:16,672 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 00:11:30,028 [bot] INFO: Завершение работы бота.
+2025-06-18 00:11:42,365 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-18 00:11:42,620 [bot] INFO: Бот успешно создан.
+2025-06-18 00:11:42,620 [bot] INFO: Роутеры подключены.
+2025-06-18 00:11:42,620 [bot] INFO: Запуск polling...
+2025-06-18 00:16:59,717 [bot] INFO: Завершение работы бота.
+2025-06-18 00:17:06,252 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-18 00:17:06,501 [bot] INFO: Бот успешно создан.
+2025-06-18 00:17:06,502 [bot] INFO: Роутеры подключены.
+2025-06-18 00:17:06,502 [bot] INFO: Запуск polling...
+2025-06-18 00:17:23,315 [bot.handlers] INFO: Получена команда /start от пользователя 919970381
+2025-06-18 00:17:33,576 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 00:17:34,130 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 00:17:36,274 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 00:54:48,133 [bot] INFO: Завершение работы бота.
+2025-06-18 00:55:07,687 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-18 00:55:07,953 [bot] INFO: Бот успешно создан.
+2025-06-18 00:55:07,953 [bot] INFO: Роутеры подключены.
+2025-06-18 00:55:07,953 [bot] INFO: Запуск polling...
+2025-06-18 00:55:51,576 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 00:55:52,193 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 00:55:54,340 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 00:56:14,195 [bot] INFO: Завершение работы бота.
+2025-06-18 00:56:23,336 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-18 00:56:23,571 [bot] INFO: Бот успешно создан.
+2025-06-18 00:56:23,571 [bot] INFO: Роутеры подключены.
+2025-06-18 00:56:23,571 [bot] INFO: Запуск polling...
+2025-06-18 00:56:35,957 [bot.handlers] INFO: Получена команда /start от пользователя 919970381
+2025-06-18 00:56:40,907 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 00:56:41,480 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 00:56:43,604 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 01:01:29,119 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 01:01:29,743 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 01:01:31,833 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 01:10:41,018 [bot] INFO: Завершение работы бота.
+2025-06-18 12:06:07,586 [bot] INFO: 🔧 Инициализация Telegram-бота...
+2025-06-18 12:06:07,851 [bot] INFO: Бот успешно создан.
+2025-06-18 12:06:07,857 [bot] INFO: Роутеры подключены.
+2025-06-18 12:06:07,857 [bot] INFO: Запуск polling...
+2025-06-18 12:06:08,207 [bot.handlers] INFO: Получена команда /start от пользователя 919970381
+2025-06-18 12:06:33,541 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 12:06:33,987 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 12:06:36,180 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 12:21:00,580 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 12:21:01,199 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 12:21:03,387 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 12:21:55,440 [bot] INFO: Завершение работы бота.
+2025-06-18 12:22:00,754 [bot] INFO: Инициализация Telegram-бота...
+2025-06-18 12:22:01,034 [bot] INFO: Бот успешно создан.
+2025-06-18 12:22:01,034 [bot] INFO: Роутеры подключены.
+2025-06-18 12:22:01,034 [bot] INFO: Запуск polling...
+2025-06-18 12:22:08,337 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 12:22:08,946 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 12:22:11,059 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 12:42:08,216 [bot] INFO: Завершение работы бота.
+2025-06-18 13:59:41,586 [bot] INFO: Инициализация Telegram-бота...
+2025-06-18 13:59:41,943 [bot] INFO: Бот успешно создан.
+2025-06-18 13:59:41,943 [bot] INFO: Роутеры подключены.
+2025-06-18 13:59:41,943 [bot] INFO: Запуск polling...
+2025-06-18 13:59:51,291 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 13:59:52,021 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 13:59:54,195 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 14:01:37,064 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 14:01:37,613 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 14:01:39,695 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 14:02:27,057 [bot] INFO: Завершение работы бота.
+2025-06-18 14:02:32,592 [bot] INFO: Инициализация Telegram-бота...
+2025-06-18 14:02:32,907 [bot] INFO: Бот успешно создан.
+2025-06-18 14:02:32,907 [bot] INFO: Роутеры подключены.
+2025-06-18 14:02:32,907 [bot] INFO: Запуск polling...
+2025-06-18 14:04:44,374 [bot] INFO: Завершение работы бота.
+2025-06-18 14:04:51,427 [bot] INFO: Инициализация Telegram-бота...
+2025-06-18 14:04:51,724 [bot] INFO: Бот успешно создан.
+2025-06-18 14:04:51,724 [bot] INFO: Роутеры подключены.
+2025-06-18 14:04:51,724 [bot] INFO: Запуск polling...
+2025-06-18 14:05:36,236 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 14:05:36,313 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 14:05:36,931 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 14:05:39,119 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 14:05:39,119 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 14:05:41,291 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 14:32:34,530 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 14:32:35,003 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 14:32:37,390 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: водяника / crowberry
+2025-06-18 14:34:38,799 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 14:34:39,375 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 14:34:41,657 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 14:36:56,377 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 14:36:57,044 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 14:36:59,253 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: малина / raspberry
+2025-06-18 14:47:08,145 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 14:47:08,649 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 14:47:10,946 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 14:49:21,763 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 14:49:22,261 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 14:49:24,568 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 14:54:14,413 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 14:54:14,887 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 14:54:21,122 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 15:18:41,541 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 15:18:42,305 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 15:18:44,668 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: ? / ?
+2025-06-18 15:24:27,222 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 15:24:27,813 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 15:24:30,040 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: малина / raspberry
+2025-06-18 15:47:31,521 [bot.handlers] INFO: Получено фото от пользователя 919970381
+2025-06-18 15:47:32,349 [bot.handlers] INFO: Фото успешно загружено с Telegram для пользователя 919970381
+2025-06-18 15:47:34,592 [bot.handlers] INFO: Предсказание отправлено пользователю 919970381: водяника / crowberry
+2025-06-18 18:12:59,823 [bot] INFO: Завершение работы бота.

@@ -1,0 +1,426 @@
+2025-06-12 22:27:49,087 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-12 22:32:30,987 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-12 23:13:33,990 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-12 23:13:34,080 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-12 23:13:34,121 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-12 23:13:34,157 [api] ERROR: Ошибка при обработке изображения: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 58, in predict
+    pred_name = class_names[pred_class]
+                ~~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
+2025-06-12 23:15:12,281 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-12 23:15:12,282 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-12 23:15:12,284 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-12 23:15:12,299 [api] ERROR: Ошибка при обработке изображения: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 58, in predict
+    pred_name = class_names[pred_class]
+                ~~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
+2025-06-12 23:15:29,924 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-12 23:15:29,924 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-12 23:15:29,924 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-12 23:15:29,939 [api] ERROR: Ошибка при обработке изображения: list index out of range
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 58, in predict
+    pred_name = class_names[pred_class]
+                ~~~~~~~~~~~^^^^^^^^^^^^
+IndexError: list index out of range
+2025-06-12 23:33:02,793 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-13 00:00:57,728 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-13 00:02:40,150 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-13 00:08:04,547 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-13 00:08:04,650 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-13 00:08:04,678 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-13 00:08:04,701 [api] INFO: Предсказание: 34 -> ('raspberry', 'малина')
+2025-06-17 23:58:17,155 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 00:04:01,898 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 00:04:01,971 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 00:04:01,999 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 00:04:02,082 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 105, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 00:07:38,473 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 00:07:38,474 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 00:07:38,476 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 00:07:38,535 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 105, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 00:10:16,503 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 00:10:16,504 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 00:10:16,505 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 00:10:16,670 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 105, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 00:11:29,470 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 00:12:02,109 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 00:12:02,123 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 00:12:02,126 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 00:12:02,193 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 105, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 00:12:36,651 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 00:16:53,037 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 00:17:36,187 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 00:17:36,201 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 00:17:36,203 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 00:17:36,272 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 105, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 00:54:02,212 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 00:54:52,637 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 00:55:54,240 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 00:55:54,264 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 00:55:54,267 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 00:55:54,337 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 105, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 00:56:13,344 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 00:56:43,518 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 00:56:43,534 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 00:56:43,537 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 00:56:43,601 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 105, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 01:01:31,767 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 01:01:31,768 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 01:01:31,769 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 01:01:31,830 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 105, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 12:05:33,357 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 12:06:36,040 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 12:06:36,068 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 12:06:36,096 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 12:06:36,177 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 106, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 12:07:24,640 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 12:19:43,548 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 12:21:03,250 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 12:21:03,276 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 12:21:03,303 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 12:21:03,382 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 106, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 12:22:10,994 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 12:22:10,995 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 12:22:10,996 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 12:22:11,056 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 106, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 12:45:33,870 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 12:45:35,250 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 12:45:35,264 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 12:45:35,266 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 12:45:35,333 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 106, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 13:41:12,757 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 13:41:28,231 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 13:41:28,290 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 13:41:28,296 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 13:41:28,460 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 106, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 13:42:15,229 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 13:42:19,703 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 13:42:19,726 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 13:42:19,726 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 13:42:19,847 [api] INFO: Предсказание: 16 -> ('crowberry', 'водяника')
+2025-06-18 13:42:19,847 [api] ERROR: Ошибка при обработке изображения: JSONResponse.__init__() got an unexpected keyword argument 'charset'
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 110, in predict
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+TypeError: JSONResponse.__init__() got an unexpected keyword argument 'charset'
+2025-06-18 13:58:12,419 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 13:58:25,975 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 13:58:25,997 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 13:58:26,002 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 13:58:26,077 [api] INFO: Предсказание: 16 -> ('crowberry', 'водяника')
+2025-06-18 13:58:26,077 [api] ERROR: Ошибка при обработке изображения: JSONResponse.__init__() got an unexpected keyword argument 'charset'
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 112, in predict
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+TypeError: JSONResponse.__init__() got an unexpected keyword argument 'charset'
+2025-06-18 13:59:54,052 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 13:59:54,052 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 13:59:54,052 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 13:59:54,179 [api] INFO: Предсказание: 16 -> ('crowberry', 'водяника')
+2025-06-18 13:59:54,179 [api] ERROR: Ошибка при обработке изображения: JSONResponse.__init__() got an unexpected keyword argument 'charset'
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 112, in predict
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+TypeError: JSONResponse.__init__() got an unexpected keyword argument 'charset'
+2025-06-18 14:03:47,223 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 14:03:47,233 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 14:03:47,249 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 14:03:47,253 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 14:03:47,272 [api] INFO: Предсказание: 16 -> ('crowberry', 'водяника')
+2025-06-18 14:03:47,272 [api] ERROR: Ошибка при обработке изображения: JSONResponse.__init__() got an unexpected keyword argument 'charset'
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 112, in predict
+    return JSONResponse(
+           ^^^^^^^^^^^^^
+TypeError: JSONResponse.__init__() got an unexpected keyword argument 'charset'
+2025-06-18 14:19:00,952 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 14:32:28,678 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 14:32:37,068 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 14:32:37,174 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 14:32:37,281 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 14:32:37,379 [api] INFO: Предсказание: 16 -> ('crowberry', 'водяника')
+2025-06-18 14:34:28,783 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 14:34:41,405 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 14:34:41,428 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 14:34:41,428 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 14:34:41,583 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 108, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 14:36:46,379 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 14:36:59,077 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 14:36:59,109 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 14:36:59,109 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 14:36:59,205 [api] INFO: Предсказание: 34 -> ('raspberry', 'малина')
+2025-06-18 14:44:17,274 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 14:46:51,966 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 14:47:10,679 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 14:47:10,705 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 14:47:10,713 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 14:47:10,937 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 108, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 14:49:16,239 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 14:49:24,299 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 14:49:24,326 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 14:49:24,332 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 14:49:24,560 [api] ERROR: Ошибка при обработке изображения: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 108, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xc2 in position 61: invalid continuation byte
+2025-06-18 14:53:28,031 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 14:54:16,920 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 14:54:16,944 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 14:54:16,951 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 14:54:21,121 [api] ERROR: Ошибка при обработке изображения: connection to server at "localhost" (::1), port 5050 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5050 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 108, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 4, in save_prediction
+    conn = get_connection()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\connection.py", line 4, in get_connection
+    return psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Бахтияр\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5050 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5050 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-06-18 14:55:48,307 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 15:18:37,969 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 15:18:44,376 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 15:18:44,414 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 15:18:44,448 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 15:18:44,658 [api] ERROR: Ошибка при обработке изображения: name 'psycopg2' is not defined
+Traceback (most recent call last):
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\main.py", line 108, in predict
+    save_prediction(file.filename, contents, pred_name[0])
+  File "C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\database\crud.py", line 9, in save_prediction
+    """, (filename, psycopg2.Binary(image_bytes), prediction))
+                    ^^^^^^^^
+NameError: name 'psycopg2' is not defined
+2025-06-18 15:24:12,711 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx
+2025-06-18 15:24:29,835 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 15:24:29,856 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 15:24:29,859 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 15:24:30,039 [api] INFO: Предсказание: 34 -> ('raspberry', 'малина')
+2025-06-18 15:47:34,415 [api] INFO: Получен запрос /predict с файлом: image.jpg
+2025-06-18 15:47:34,415 [api] INFO: Изображение успешно прочитано и преобразовано в RGB
+2025-06-18 15:47:34,415 [api] DEBUG: Tensor shape: (1, 3, 240, 240)
+2025-06-18 15:47:34,592 [api] INFO: Предсказание: 16 -> ('crowberry', 'водяника')
+2025-06-18 15:48:38,149 [api] INFO: ONNX модель успешно загружена из C:\Users\Бахтияр\PycharmProjects\Berry_Classifier\services\inference_api\..\..\models\efficientnetB1_1.0_best_model.onnx

@@ -1,0 +1,36 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  simple:
+    format: "%(asctime)s [%(name)s] %(levelname)s: %(message)s"
+
+handlers:
+  bot_file:
+    class: logging.FileHandler
+    level: INFO
+    formatter: simple
+    filename: logs/bot.log
+    encoding: utf-8
+
+  api_file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: simple
+    filename: logs/api.log
+    encoding: utf-8
+
+loggers:
+  bot:
+    level: INFO
+    handlers: [bot_file]
+    propagate: no
+
+  api:
+    level: DEBUG
+    handlers: [api_file]
+    propagate: no
+
+root:
+  level: WARNING
+  handlers: []
