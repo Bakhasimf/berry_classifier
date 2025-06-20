@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pillow
+onnxruntime
+numpy
+torch
+torchvision
+pyyaml
+psycopg2-binary
