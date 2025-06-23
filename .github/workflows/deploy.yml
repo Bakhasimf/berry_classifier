@@ -1,33 +1,49 @@
-name: Deploy to VPS
+name: Build and Deploy Berry Classifier
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build API image
+        run: docker build -f services/Dockerfile.api -t berry_api_image .
+
+      - name: Build Bot image
+        run: docker build -f services/Dockerfile.bot -t berry_bot_image .
+
+      - name: Save Docker images to tar
+        run: |
+          docker save berry_api_image > berry_api_image.tar
+          docker save berry_bot_image > berry_bot_image.tar
 
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
 
-      - name: Copy project to server via rsync
+      - name: Copy project and images to server
         run: |
+          scp -o StrictHostKeyChecking=no berry_api_image.tar berry_bot_image.tar root@185.250.44.67:/home/bakhasimf/
           rsync -avz --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
-            ./ root@185.250.44.67:/home/bakhasimf/apps
+            ./ root@185.250.44.67:/home/bakhasimf/apps/berry_classifier/
 
-      - name: Rebuild & Restart Docker on server
+      - name: Load images and restart Docker Compose
         run: |
           ssh root@185.250.44.67 << 'EOF'
-          cd /home/bakhasimf/apps
+          docker load < /home/bakhasimf/berry_api_image.tar
+          docker load < /home/bakhasimf/berry_bot_image.tar
+          cd /home/bakhasimf/apps/berry_classifier
           docker compose down
-          docker compose up -d --build
+          docker compose up -d
           EOF
