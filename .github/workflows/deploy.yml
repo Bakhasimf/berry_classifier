@@ -33,17 +33,17 @@ jobs:
 
       - name: Copy project and images to server
         run: |
-          scp -o StrictHostKeyChecking=no berry_api_image.tar berry_bot_image.tar root@185.250.44.67:/home/bakhasimf/apps/berry_classifier/
+          scp -o StrictHostKeyChecking=no berry_api_image.tar berry_bot_image.tar root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
           rsync -avz --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
-            ./ root@185.250.44.67:/home/bakhasimf/apps/berry_classifier/
+            ./ root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
 
       - name: Load images and restart Docker Compose
         run: |
           ssh root@185.250.44.67 << 'EOF'
-          docker load < /home/bakhasimf/apps/berry_classifier/berry_api_image.tar
-          docker load < /home/bakhasimf/apps/berry_classifier/berry_bot_image.tar
-          cd /home/bakhasimf/apps/berry_classifier
+          docker load < /root/home/bakhasimf/apps/berry_classifier/berry_api_image.tar
+          docker load < /root/home/bakhasimf/apps/berry_classifier/berry_bot_image.tar
+          cd /root/home/bakhasimf/apps/berry_classifier
           docker compose down
           docker compose up -d
           EOF
