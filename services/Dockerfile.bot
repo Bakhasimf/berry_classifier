@@ -7,5 +7,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY services/telegram_bot/ .
 COPY services/database/ ./services/database/
+COPY logs/bot.log ./logs/
 
 CMD ["python", "bot.py"]

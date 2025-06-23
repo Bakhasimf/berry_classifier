@@ -7,6 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY services/inference_api/ .
 COPY services/database/ ./services/database/
-COPY models/ ./models/
+COPY models/efficientnetB1_1.0_best_model.onnx ./models/
+COPY logs/api.log ./logs/
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
