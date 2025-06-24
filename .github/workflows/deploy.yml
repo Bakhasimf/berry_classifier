@@ -30,7 +30,11 @@ jobs:
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
-
+          
+      - name: Clean up old .tar files on server
+        run: |
+          ssh -o StrictHostKeyChecking=no root@185.250.44.67 'rm -f /root/home/bakhasimf/apps/berry_classifier/*.tar'
+          
       - name: Copy project and images to server
         run: |
           scp -o StrictHostKeyChecking=no berry_api_image.tar berry_bot_image.tar root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
