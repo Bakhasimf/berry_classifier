@@ -46,4 +46,5 @@ jobs:
           cd /root/home/bakhasimf/apps/berry_classifier
           docker compose down
           docker compose up -d
+          docker system prune -af --volumes
           EOF
