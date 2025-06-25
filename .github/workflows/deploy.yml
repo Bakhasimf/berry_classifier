@@ -40,14 +40,14 @@ jobs:
           scp -o StrictHostKeyChecking=no berry_api_image.tar berry_bot_image.tar root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
           rsync -avz --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
-            ./ root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
+            ./services/docker-compose.yml root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
 
       - name: Load images and restart Docker Compose
         run: |
           ssh root@185.250.44.67 << 'EOF'
           docker load < /root/home/bakhasimf/apps/berry_classifier/berry_api_image.tar
           docker load < /root/home/bakhasimf/apps/berry_classifier/berry_bot_image.tar
-          cd /root/home/bakhasimf/apps/berry_classifier
+          cd /root/home/bakhasimf/apps/berry_classifier/services
           docker-compose down
           docker-compose up -d
           docker system prune -af --volumes
