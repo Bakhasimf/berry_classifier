@@ -48,7 +48,7 @@ jobs:
           docker load < /root/home/bakhasimf/apps/berry_classifier/berry_api_image.tar
           docker load < /root/home/bakhasimf/apps/berry_classifier/berry_bot_image.tar
           cd /root/home/bakhasimf/apps/berry_classifier
-          docker compose down
-          docker compose up -d
+          docker-compose down
+          docker-compose up -d
           docker system prune -af --volumes
           EOF
