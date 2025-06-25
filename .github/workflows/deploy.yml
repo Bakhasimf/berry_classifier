@@ -47,7 +47,7 @@ jobs:
           ssh root@185.250.44.67 << 'EOF'
           docker load < /root/home/bakhasimf/apps/berry_classifier/berry_api_image.tar
           docker load < /root/home/bakhasimf/apps/berry_classifier/berry_bot_image.tar
-          cd /root/home/bakhasimf/apps/berry_classifier/services
+          cd /root/home/bakhasimf/apps/berry_classifier
           docker-compose down
           docker-compose up -d
           docker system prune -af --volumes
