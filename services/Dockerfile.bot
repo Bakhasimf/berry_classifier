@@ -5,7 +5,7 @@ WORKDIR /bot
 COPY services/telegram_bot/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY services/telegram_bot/ .
+COPY services/telegram_bot/ ./services/telegram_bot/
 COPY services/database/ ./services/database/
 COPY logs/bot.log ./logs/
 COPY logging_config.yaml ./

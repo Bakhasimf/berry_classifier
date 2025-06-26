@@ -5,7 +5,7 @@ WORKDIR /app
 COPY services/inference_api/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY services/inference_api/ .
+COPY services/inference_api/ ./services/inference_api/
 COPY services/database/ ./services/database/
 COPY models/efficientnetB1_1.0_best_model.onnx ./models/
 COPY logs/api.log ./logs/
