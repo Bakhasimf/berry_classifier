@@ -11,7 +11,7 @@ logger = logging.getLogger("bot.handlers")
 # === Роутер ===
 router = Router()
 
-API_URL = "http://localhost:8000/predict"  # URL FastAPI
+API_URL = "http://185.250.44.67:8000/predict"  # URL FastAPI
 
 @router.message(F.text == "/start")
 async def handle_start(message: Message):
