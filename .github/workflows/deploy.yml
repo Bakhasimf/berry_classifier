@@ -30,13 +30,17 @@ jobs:
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
-
+          
+      - name: Clean up old .tar files on server
+        run: |
+          ssh -o StrictHostKeyChecking=no root@185.250.44.67 'rm -f /root/home/bakhasimf/apps/berry_classifier/*.tar'
+          
       - name: Copy project and images to server
         run: |
           scp -o StrictHostKeyChecking=no berry_api_image.tar berry_bot_image.tar root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
           rsync -avz --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
-            ./ root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
+            ./services/docker-compose.yml root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
 
       - name: Load images and restart Docker Compose
         run: |
@@ -44,7 +48,7 @@ jobs:
           docker load < /root/home/bakhasimf/apps/berry_classifier/berry_api_image.tar
           docker load < /root/home/bakhasimf/apps/berry_classifier/berry_bot_image.tar
           cd /root/home/bakhasimf/apps/berry_classifier
-          docker compose down
-          docker compose up -d
+          docker-compose down
+          docker-compose up -d
           docker system prune -af --volumes
           EOF
