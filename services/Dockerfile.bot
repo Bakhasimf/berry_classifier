@@ -10,4 +10,4 @@ COPY services/database/ ./services/database/
 COPY logs/bot.log ./logs/
 COPY logging_config.yaml ./
 
-CMD ["python", "bot.py"]
+CMD ["python", "services/telegram_bot/bot.py"]

@@ -11,4 +11,5 @@ COPY models/efficientnetB1_1.0_best_model.onnx ./models/
 COPY logs/api.log ./logs/
 COPY logging_config.yaml ./
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "services.inference_api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
