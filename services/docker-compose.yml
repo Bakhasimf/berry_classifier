@@ -3,7 +3,7 @@ version: '3.9'
 services:
   api:
     build:
-      context: .
+      context: ../
       dockerfile: Dockerfile.api
     image: berry_api_image:latest
     ports:
@@ -16,7 +16,7 @@ services:
 
   bot:
     build:
-      context: .
+      context: ../
       dockerfile: Dockerfile.bot
     image: berry_bot_image:latest
     depends_on:
