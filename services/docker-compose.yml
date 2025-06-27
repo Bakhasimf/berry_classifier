@@ -2,6 +2,9 @@ version: '3.9'
 
 services:
   api:
+    build:
+      context: .
+      dockerfile: services/Dockerfile.api
     image: berry_api_image:latest
     ports:
       - "8000:8000"
@@ -12,6 +15,9 @@ services:
       - /root/home/bakhasimf/apps/berry_classifier/logs/api:/logs
 
   bot:
+    build:
+      context: .
+      dockerfile: services/Dockerfile.bot
     image: berry_bot_image:latest
     depends_on:
       - api
@@ -31,3 +37,39 @@ services:
 
 volumes:
   pgdata:
+
+
+
+#version: '3.9'
+#
+#services:
+#  api:
+#    image: berry_api_image:latest
+#    ports:
+#      - "8000:8000"
+#    depends_on:
+#      - db
+#    restart: always
+#    volumes:
+#      - /root/home/bakhasimf/apps/berry_classifier/logs/api:/logs
+#
+#  bot:
+#    image: berry_bot_image:latest
+#    depends_on:
+#      - api
+#    restart: always
+#    volumes:
+#      - /root/home/bakhasimf/apps/berry_classifier/logs/bot:/logs
+#
+#  db:
+#    image: postgres:15
+#    environment:
+#      POSTGRES_DB: postgres
+#      POSTGRES_USER: postgres
+#      POSTGRES_PASSWORD: admin
+#    volumes:
+#      - pgdata:/var/lib/postgresql/data
+#    restart: always
+#
+#volumes:
+#  pgdata:

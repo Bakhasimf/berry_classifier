@@ -12,47 +12,42 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Build API image
-        run: docker build -f services/Dockerfile.api -t berry_api_image:latest .
-
-      - name: Build Bot image
-        run: docker build -f services/Dockerfile.bot -t berry_bot_image:latest .
-
-
-      - name: Save Docker images to tar
-        run: |
-          docker save berry_api_image > berry_api_image.tar
-          docker save berry_bot_image > berry_bot_image.tar
-
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
-          
-      - name: Clean up old .tar files on server
+
+      - name: Clean up old files on server
         run: |
-          ssh -o StrictHostKeyChecking=no root@185.250.44.67 'rm -f /root/home/bakhasimf/apps/berry_classifier/*.tar'
-          
-      - name: Copy project and images to server
+          ssh -o StrictHostKeyChecking=no root@185.250.44.67 '
+            cd /root/home/bakhasimf/apps/berry_classifier &&
+            ls | grep -v "^logs$" | xargs rm -rf
+          '
+      - name: Copy necessary files to server
         run: |
-          scp -o StrictHostKeyChecking=no berry_api_image.tar berry_bot_image.tar root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
           rsync -avz --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
-            ./services/docker-compose.yml root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
+            ./services/inference_api \
+            ./services/telegram_bot \
+            ./services/database \
+            ./services/Dockerfile.api \
+            ./services/Dockerfile.bot \
+            ./models/efficientnetB1_1.0_best_model.onnx \
+            ./logging_config.yaml \
+            ./services/docker-compose.yml \
+            ./logs/api.log \
+            ./logs/bot.log \
+            root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
 
-      - name: Load images and restart Docker Compose
+      - name: Build and run containers on server
         run: |
           ssh root@185.250.44.67 << 'EOF'
-          docker image rm -f berry_api_image:latest || true
-          docker image rm -f berry_bot_image:latest || true
-          docker load < /root/home/bakhasimf/apps/berry_classifier/berry_api_image.tar
-          docker load < /root/home/bakhasimf/apps/berry_classifier/berry_bot_image.tar
           cd /root/home/bakhasimf/apps/berry_classifier
+          
+          docker build -f services/Dockerfile.api -t berry_api_image:latest .
+          docker build -f services/Dockerfile.bot -t berry_bot_image:latest .
+
           docker-compose down
-          docker-compose up -d --force-recreate
+          docker-compose up -d --build --force-recreate --remove-orphans
           docker system prune -af --volumes
           EOF
-

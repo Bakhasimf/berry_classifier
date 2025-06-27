@@ -14,8 +14,7 @@ from fastapi.responses import JSONResponse
 app = FastAPI()
 
 # === Логгирование ===
-base_dir = os.path.dirname(__file__)
-config_path = os.path.join(base_dir, "logging_config.yaml")
+config_path = os.path.join(os.path.dirname(__file__), "..", "..", "logging_config.yaml")
 with open(config_path, 'r') as f:
     config = yaml.safe_load(f)
 logging.config.dictConfig(config)
