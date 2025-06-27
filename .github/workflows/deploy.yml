@@ -37,11 +37,13 @@ jobs:
       - name: Build and run containers on server
         run: |
           ssh root@185.250.44.67 << 'EOF'
-          cd /root/home/bakhasimf/apps/berry_classifier/services/
+          cd /root/home/bakhasimf/apps/berry_classifier/
           
-          docker build -f Dockerfile.api -t berry_api_image:latest .
-          docker build -f Dockerfile.bot -t berry_bot_image:latest .
-
+          docker build -f services/Dockerfile.api -t berry_api_image:latest .
+          docker build -f services/Dockerfile.bot -t berry_bot_image:latest .
+          
+          cd services/
+          
           docker-compose down
           docker-compose up -d --build --force-recreate --remove-orphans
           docker system prune -af --volumes
