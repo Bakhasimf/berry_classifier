@@ -42,9 +42,8 @@ jobs:
           docker build -f services/Dockerfile.api -t berry_api_image:latest .
           docker build -f services/Dockerfile.bot -t berry_bot_image:latest .
           
-          cd services/
-          
-          docker-compose down
-          docker-compose up -d --build --force-recreate --remove-orphans
+          docker-compose -f services/docker-compose.yml down
+          docker-compose -f services/docker-compose.yml up -d --build --force-recreate --remove-orphans
           docker system prune -af --volumes
+          
           EOF
