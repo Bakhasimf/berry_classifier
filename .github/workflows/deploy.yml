@@ -27,16 +27,12 @@ jobs:
         run: |
           rsync -avz --delete \
             -e "ssh -o StrictHostKeyChecking=no" \
-            ./services/inference_api \
-            ./services/telegram_bot \
-            ./services/database \
-            ./services/Dockerfile.api \
-            ./services/Dockerfile.bot \
-            ./models/efficientnetB1_1.0_best_model.onnx \
+            ./services \
+            ./models \
             ./logging_config.yaml \
-            ./services/docker-compose.yml \
             ./logs/api.log \
             ./logs/bot.log \
+            docker-compose.yml \
             root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
 
       - name: Build and run containers on server
