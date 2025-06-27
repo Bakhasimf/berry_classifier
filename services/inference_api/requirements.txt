@@ -7,3 +7,4 @@ torch
 torchvision
 pyyaml
 psycopg2-binary
+python-multipart
