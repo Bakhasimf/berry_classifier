@@ -30,8 +30,7 @@ jobs:
             ./services \
             ./models \
             ./logging_config.yaml \
-            ./logs/api.log \
-            ./logs/bot.log \
+            ./logs \
             root@185.250.44.67:/root/home/bakhasimf/apps/berry_classifier/
 
       - name: Build and run containers on server
