@@ -4,7 +4,7 @@ services:
   api:
     build:
       context: ../
-      dockerfile: Dockerfile.api
+      dockerfile: services/Dockerfile.api
     image: berry_api_image:latest
     ports:
       - "8000:8000"
@@ -17,7 +17,7 @@ services:
   bot:
     build:
       context: ../
-      dockerfile: Dockerfile.bot
+      dockerfile: services/Dockerfile.bot
     image: berry_bot_image:latest
     depends_on:
       - api
