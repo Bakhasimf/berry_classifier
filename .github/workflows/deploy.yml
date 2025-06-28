@@ -3,6 +3,8 @@ name: Build and Deploy Berry Classifier
 on:
   push:
     branches: [ master ]
+    paths:
+      - 'services/**'
 
 jobs:
   deploy:
