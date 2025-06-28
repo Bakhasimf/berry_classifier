@@ -18,6 +18,8 @@ services:
     build:
       context: ../
       dockerfile: services/Dockerfile.bot
+    env_file:
+      - .env
     image: berry_bot_image:latest
     depends_on:
       - api
