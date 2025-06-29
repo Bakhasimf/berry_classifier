@@ -66,6 +66,7 @@ PostgreSQL (image + prediction)
 ---
 
 
+
 ## 🗃️ Структура проекта
 ```text
 Berry_Classifier/  
