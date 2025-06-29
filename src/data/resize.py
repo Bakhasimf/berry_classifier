@@ -7,7 +7,7 @@ TARGET_SIZE = (224, 224)
 
 # Исходная папка с данными
 base_dir = os.path.dirname(__file__)
-dataset_dir = os.path.abspath(os.path.join(base_dir, "..", "..", "data", "processed", "Berries_Fruit-262"))
+dataset_dir = os.path.abspath(os.path.join(base_dir, "..", "..", "data", "processed", "split_Berries_Fruit-262"))
 
 # Папка для сохранения ресайзнутых копий (новая)
 # dataset_dir_resized = dataset_dir + "_resized"
