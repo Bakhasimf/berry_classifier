@@ -162,7 +162,7 @@ Berry_Classifier/
 
 ## 👨‍💻 Автор  
 ## Касимов Бахтияр  
-- ML Engineer / Python Backend Developer   
+- Data Scientist / ML Engineer / Python Backend Developer   
 
 <img src="https://github.com/user-attachments/assets/a03a04d9-5fb6-42bb-a251-ace15ed2ac63" width="70%" />
 
